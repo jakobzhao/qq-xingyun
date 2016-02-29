@@ -72,4 +72,4 @@ def qqcrawler(project, address, port):
     except errors.DuplicateKeyError:
         log(NOTICE, 'This post has already been inserted.')
 
-    log(NOTICE, 'Mission completion. Time: %d sec(s)' % int((datetime.datetime.now() - start).seconds))
+    log(NOTICE, 'Time: %d sec(s)' % int((datetime.datetime.now() - start).seconds))
