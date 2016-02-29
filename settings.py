@@ -6,4 +6,11 @@
 # @email:        bo_zhao@hks.harvard.edu
 # @website:      http://yenching.org
 # @organization: Harvard Kennedy School
-SETTINGS = {}
+
+
+SETTINGS = {
+    'project': 'qq',
+    'pis': ['jakobzhao@gmail.com'],
+    'address': 'localhost',
+    'port': 27017,
+}
