@@ -12,7 +12,7 @@ from qqcrawler.log import *
 import datetime
 import sys
 import time
-sys.path.append("/home/.local/lib/python2.7/site-packages")
+sys.path.append("/usr/local/lib/python2.7/site-packages")
 sys.path.append("/home/Workspace/qqcrawler")
 
 port = 27017

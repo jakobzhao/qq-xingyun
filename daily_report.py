@@ -14,7 +14,7 @@
 
 import sys
 
-sys.path.append("/home/bo/.local/lib/python2.7/site-packages")
+sys.path.append("/usr/local/lib/python2.7/site-packages")
 sys.path.append("/home/bo/Workspace/qqcrawler")
 
 from qqcrawler.report import brief_report

@@ -16,7 +16,7 @@ import datetime
 import random
 import urllib2
 import json
-
+from httplib import BadStatusLine
 
 # Crawling pages from http://xingyun.map.qq.com/
 def qqcrawler(project, address, port):
@@ -42,7 +42,11 @@ def qqcrawler(project, address, port):
 
     req = urllib2.Request(url)
     req.add_header("User-Agent", random_header)
-    content = urllib2.urlopen(req, timeout=60).read()
+    try:
+        content = urllib2.urlopen(req, timeout=60).read()
+    except BadStatusLine:
+        log(WARNING, 'badstatus')
+        return
     qq_json = json.loads(content)
 
     # arr = qq_json['locs'].split(",")
