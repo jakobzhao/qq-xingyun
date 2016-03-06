@@ -47,6 +47,8 @@ def qqcrawler(project, address, port):
     except BadStatusLine:
         log(WARNING, 'badstatus')
         return
+    except:
+        return
     qq_json = json.loads(content)
 
     # arr = qq_json['locs'].split(",")
